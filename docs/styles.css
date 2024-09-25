@@ -1,0 +1,41 @@
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin: 20px;
+}
+
+/* Ensure your image path is correct */
+body {
+    background-image: url('./images/background.jpg');
+    background-size: cover; /* Cover the entire screen */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repeating if the image is smaller than the viewport */
+}
+
+/* Flexbox for content-wrapper */
+.content-wrapper {
+    background-color: #D3D3D3; /* Light background color */
+    padding: 20px;
+    border: 2px solid #D3D3D3; /* Add a border */
+    margin: 0 auto; /* Center the content */
+    max-width: 1200px; /* Limit width */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Align text and video side by side */
+    align-items: flex-start; /* Align items at the top */
+}
+
+/* Text section */
+.text-section {
+    flex: 1; /* Make text take up the remaining space */
+    margin-right: 20px; /* Add some spacing between the text and the video */
+}
+
+/* Video section */
+.video-section {
+    flex: 0 0 315px; /* Fixed width for the video section */
+}
+h1 {
+    font-size: 40px; /* Adjust size */
+    text-align: center; /* Center align the text */
+    margin: 20px; /* Add margin around the heading */
+}
